@@ -8,6 +8,9 @@
     <artifactId>common</artifactId>
     <version>1.0.0</version>
 
+    <name>Common</name>
+    <description>各系统间公共内容</description>
+
     <properties>
         <plugin.compiler.version>3.2</plugin.compiler.version>
         <plugin.compiler.level>1.8</plugin.compiler.level>
