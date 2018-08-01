@@ -25,6 +25,7 @@
         <spring-boot-mybatis.version>1.3.2</spring-boot-mybatis.version>
         <druid.version>1.0.18</druid.version>
         <jca.version>1.0.2</jca.version>
+        <log4j2.api.version>2.5</log4j2.api.version>
 
         <!--common-->
         <commons-lang3.version>3.3.2</commons-lang3.version>
@@ -104,6 +105,16 @@
             <groupId>com.github.ofofs</groupId>
             <artifactId>jca-core</artifactId>
             <version>${jca.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.api.version}</version>
         </dependency>
 
         <!--common-->
