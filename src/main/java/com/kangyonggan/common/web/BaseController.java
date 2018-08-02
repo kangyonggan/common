@@ -3,10 +3,7 @@ package com.kangyonggan.common.web;
 import com.kangyonggan.app.util.StringUtil;
 import com.kangyonggan.common.Params;
 import com.kangyonggan.common.Query;
-import com.kangyonggan.common.Response;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Map;
 
@@ -18,26 +15,6 @@ import java.util.Map;
  */
 @Log4j2
 public class BaseController {
-
-    /**
-     * 异常捕获
-     *
-     * @param e 异常
-     * @return 返回统一异常响应
-     */
-    @ExceptionHandler
-    @ResponseBody
-    public Response handleException(Exception e) {
-        Response response;
-        if (e != null) {
-            response = Response.getFailureResponse(e.getMessage());
-        } else {
-            response = Response.getFailureResponse();
-        }
-
-        log.error("捕获到异常", e);
-        return response;
-    }
 
     /**
      * 获取请求参数
