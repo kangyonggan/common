@@ -106,7 +106,7 @@ public final class Response extends HashMap<String, Object> implements Serializa
      * 响应置为自定义的失败
      *
      * @param code 失败代码
-     * @param msg 失败消息
+     * @param msg  失败消息
      * @return 返回置为失败的响应
      */
     public Response failure(String code, String msg) {
@@ -131,5 +131,14 @@ public final class Response extends HashMap<String, Object> implements Serializa
         put(RESP_CO, Resp.SUCCESS.getRespCo());
         put(RESP_MSG, msg);
         return this;
+    }
+
+    /**
+     * 判断响应是否成功
+     *
+     * @return 成功返回true，失败返回false
+     */
+    public boolean isSuccess() {
+        return Resp.SUCCESS.getRespCo().equals(get(RESP_CO));
     }
 }
