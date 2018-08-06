@@ -71,8 +71,8 @@ public final class Response extends HashMap<String, Object> implements Serializa
     /**
      * 获取一个自定义失败的响应
      *
-     * @param msg 失败代码
-     * @param msg 失败消息
+     * @param code 失败代码
+     * @param msg  失败消息
      * @return 返回一个失败响应
      */
     public static Response getFailureResponse(String code, String msg) {
