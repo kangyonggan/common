@@ -6,7 +6,7 @@ import lombok.Getter;
  * 状态枚举
  *
  * @author kangyonggan
- * @date 5/5/17
+ * @since 5/4/18
  */
 public enum Status {
 
