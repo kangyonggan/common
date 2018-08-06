@@ -128,6 +128,7 @@ public final class Response extends HashMap<String, Object> implements Serializa
      * 设置成功消息
      *
      * @param msg 成功消息
+     * @return 返回设置为成功的消息
      */
     public Response success(String msg) {
         put(RESP_CO, Resp.SUCCESS.getRespCo());
