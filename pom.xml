@@ -6,7 +6,7 @@
 
     <groupId>com.kangyonggan</groupId>
     <artifactId>common</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0.RELEASE</version>
 
     <name>Common</name>
     <description>各系统间公共内容</description>
@@ -46,7 +46,7 @@
         <druid.version>1.0.18</druid.version>
         <jca.version>1.0.2</jca.version>
         <spring-boot-starter-web.version>2.0.0.RELEASE</spring-boot-starter-web.version>
-        <app-util.version>1.0.1</app-util.version>
+        <app-util.version>1.0.0.RELEASE</app-util.version>
 
         <!--common-->
         <commons-lang3.version>3.3.2</commons-lang3.version>
